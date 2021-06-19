@@ -1,0 +1,22 @@
+.btn {
+  width: 89px;
+}
+
+.btn button {
+  width: 100%;
+  padding: 1.5rem 0;
+  font-size: inherit;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.btn div {
+  height: 4px;
+  background-color: transparent;
+  border-radius: 4px 4px 0 0;
+}
+
+.btn .active {
+  background-color: #2f80ed;
+}

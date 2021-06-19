@@ -1,0 +1,46 @@
+.form_control {
+  max-width: 610px;
+  margin: 0 auto;
+  margin-bottom: 3.3rem;
+}
+
+.form_control form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_control input {
+  border: 1px solid #bdbdbd;
+  border-radius: 12px;
+  width: 100%;
+  padding: 2rem 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.form_control input:focus {
+  outline: none;
+}
+
+.form_control input::placeholder {
+  font-size: 1.4rem;
+  color: #828282;
+}
+
+.form_control button {
+  background-color: #2f80ed;
+  color: #fff;
+  padding: 2rem 4rem;
+  font-size: inherit;
+  font-weight: 600;
+  box-shadow: 0px 2px 6px rgba(127, 177, 243, 0.4);
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  margin-left: 2.5rem;
+  transition: all 200ms;
+}
+
+.form_control button:hover {
+  opacity: 0.9;
+}

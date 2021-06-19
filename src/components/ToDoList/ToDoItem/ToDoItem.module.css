@@ -1,0 +1,46 @@
+.flex_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.8rem;
+}
+
+.flex_item i {
+  color: #bdbdbd;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.flex_item i:hover {
+  color: #eb5757;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox input {
+  border-radius: 4px;
+  padding: 222rem;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.checkbox input:checked {
+  font-size: 0.5rem;
+  cursor: pointer;
+  text-decoration: line-through;
+}
+
+.checkbox label {
+  margin-left: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.checkbox input:checked + label {
+  text-decoration: line-through;
+}

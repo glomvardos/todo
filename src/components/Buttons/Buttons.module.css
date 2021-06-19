@@ -1,0 +1,7 @@
+.control {
+  margin: 5.5rem auto 2rem auto;
+  max-width: 610px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #bdbdbd;
+}
