@@ -4,12 +4,12 @@ import Input from './components/Input/Input'
 import ToDoList from './components/ToDoList/ToDoList'
 
 const App = () => {
-  // const tasks = localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')) : []
+  const tasks = localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')) : []
   const [items, setItems] = useState([])
   const [isActive, setIsActive] = useState(false)
   const [isCompleted, setIsCompleted] = useState(false)
 
-  // localStorage.setItem('tasks', JSON.stringify(items))
+  localStorage.setItem('tasks', JSON.stringify(items))
 
   // Add task
   const todoItemsHandler = item => {

@@ -10,19 +10,19 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  height: 100vh;
+  /* height: 100vh; */
   overflow: hidden;
   padding: 3rem;
   background-color: #fff;
   color: #333;
   font-size: 1.4rem;
 }
-#root {
+/* #root {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
 
 h1 {
   font-family: 'Raleway', sans-serif;
