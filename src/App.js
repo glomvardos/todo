@@ -71,7 +71,7 @@ const App = () => {
           showActiveList={showActiveListHandler}
           showCompletedList={showCompletedListHandler}
         />
-        <Input onTodoHandler={todoItemsHandler} items={items} />
+        <Input onTodoHandler={todoItemsHandler} items={items} isCompleted={isCompleted} />
         <ToDoList
           items={items}
           activeTodoHandler={activeTodoHandler}

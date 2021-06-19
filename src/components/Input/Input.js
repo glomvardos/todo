@@ -18,12 +18,14 @@ const Input = props => {
   }
 
   return (
-    <div className={classes.form_control}>
-      <form onSubmit={onSubmitHandler}>
-        <input type='text' ref={inputRef} placeholder='add details' />
-        <button>Add</button>
-      </form>
-    </div>
+    !props.isCompleted && (
+      <div className={classes.form_control}>
+        <form onSubmit={onSubmitHandler}>
+          <input type='text' ref={inputRef} placeholder='add details' />
+          <button>Add</button>
+        </form>
+      </div>
+    )
   )
 }
 
