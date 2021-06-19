@@ -29,12 +29,6 @@
   cursor: pointer;
 }
 
-.checkbox input:checked {
-  font-size: 0.5rem;
-  cursor: pointer;
-  text-decoration: line-through;
-}
-
 .checkbox label {
   margin-left: 0.8rem;
   font-size: 1.8rem;
