@@ -5,7 +5,7 @@ import ToDoList from './components/ToDoList/ToDoList'
 
 const App = () => {
   const tasks = localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')) : []
-  const [items, setItems] = useState([])
+  const [items, setItems] = useState(tasks)
   const [isActive, setIsActive] = useState(false)
   const [isCompleted, setIsCompleted] = useState(false)
 
