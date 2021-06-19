@@ -27,9 +27,9 @@
   height: 24px;
   width: 24px;
   cursor: pointer;
-  appearance: auto;
-  -moz-appearance: auto;
-  -webkit-appearance: auto;
+  appearance: checkbox;
+  -moz-appearance: checkbox;
+  -webkit-appearance: checkbox;
 }
 
 .checkbox input:checked {
