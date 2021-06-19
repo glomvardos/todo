@@ -1,7 +1,7 @@
 import classes from './ToDoItem.module.css'
 
 const ToDoItem = props => {
-  const onCheckHandler = event => {
+  const onChangeHandler = event => {
     props.activeTodoHandler({
       name: event.target.id,
       isChecked: event.target.checked,
@@ -15,7 +15,7 @@ const ToDoItem = props => {
           id={props.label}
           type='checkbox'
           checked={props.isChecked}
-          onChange={onCheckHandler}
+          onChange={onChangeHandler}
         />
         <label htmlFor={props.label}>{props.label}</label>
       </div>

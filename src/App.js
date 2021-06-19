@@ -17,16 +17,16 @@ const App = () => {
   }
 
   // Update task item if the checkbox is checked or not
-  const activeTodoHandler = item => {
-    const findIndex = items.findIndex(listItem => listItem.name === item.name)
-    const findItem = items[findIndex]
+  const activeTodoHandler = task => {
+    const findIndex = items.findIndex(listItem => listItem.name === task.name)
+    const findTask = items[findIndex]
     const updateItem = {
-      ...findItem,
-      isChecked: item.isChecked,
+      ...findTask,
+      isChecked: task.isChecked,
     }
-    const updatedItems = [...items]
-    updatedItems[findIndex] = updateItem
-    setItems(updatedItems)
+    const updatedTasks = [...items]
+    updatedTasks[findIndex] = updateItem
+    setItems(updatedTasks)
   }
 
   // Display all tasks
@@ -64,7 +64,6 @@ const App = () => {
       <main>
         <h1>#todo</h1>
         <Buttons
-          items={items}
           isActive={isActive}
           isCompleted={isCompleted}
           showAllList={showAllListHandler}
